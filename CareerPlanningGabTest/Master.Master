@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="CareerPlanning.CareerPlanning.Master" %>
+
+<%@ Register Src="~/CareerPlanningGabTest/controls/header.ascx" TagPrefix="uc1" TagName="header" %>
+<%@ Register Src="~/CareerPlanningGabTest/controls/footer.ascx" TagPrefix="uc1" TagName="footer" %>
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Elmhurst Career Readiness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="scripts/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="frmBody" runat="server">
+        <uc1:header runat="server" id="header" />
+        <div class="container">
+            <div class="col-1"></div>
+            <div class="col-10"> <!-- centered column with main info -->
+                <asp:ContentPlaceHolder ID="cntCenter" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <uc1:footer runat="server" id="footer" />
+    </form>
+</body>
+</html>

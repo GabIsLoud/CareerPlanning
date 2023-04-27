@@ -67,21 +67,49 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CareerPlanningGabTest\controls\footer.ascx" />
+    <Content Include="CareerPlanningGabTest\controls\header.ascx" />
+    <Content Include="CareerPlanningGabTest\images\elmLogo.png" />
+    <Content Include="CareerPlanningGabTest\images\elmLogoWhite.png" />
+    <Content Include="CareerPlanningGabTest\LogIn.aspx" />
+    <Content Include="CareerPlanningGabTest\scripts\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CareerPlanning\Master.Master.cs">
+    <Compile Include="CareerPlanningGabTest\controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\controls\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\controls\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CareerPlanning\Master.Master.designer.cs">
+    <Compile Include="CareerPlanningGabTest\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CareerPlanning\Master.Master" />
+    <Content Include="CareerPlanningGabTest\Master.Master" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -89,11 +117,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CareerPlanning\controls\" />
-    <Folder Include="CareerPlanning\images\" />
-    <Folder Include="CareerPlanning\scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="CareerPlanningGabTest\controls\footer.ascx" />
     <Content Include="CareerPlanningGabTest\controls\header.ascx" />
+    <Content Include="CareerPlanningGabTest\freshmen.aspx" />
     <Content Include="CareerPlanningGabTest\images\elmLogo.png" />
     <Content Include="CareerPlanningGabTest\images\elmLogoWhite.png" />
     <Content Include="CareerPlanningGabTest\LogIn.aspx" />
@@ -90,6 +91,13 @@
     <Compile Include="CareerPlanningGabTest\controls\header.ascx.designer.cs">
       <DependentUpon>header.ascx</DependentUpon>
     </Compile>
+    <Compile Include="CareerPlanningGabTest\freshmen.aspx.cs">
+      <DependentUpon>freshmen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\freshmen.aspx.designer.cs">
+      <DependentUpon>freshmen.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CareerPlanningGabTest\LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,10 +112,18 @@
     <Compile Include="CareerPlanningGabTest\Master.Master.designer.cs">
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
+    <Compile Include="CareerPlanningGabTest\PersonalProgress.Master.cs">
+      <DependentUpon>PersonalProgress.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareerPlanningGabTest\PersonalProgress.Master.designer.cs">
+      <DependentUpon>PersonalProgress.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CareerPlanningGabTest\Master.Master" />
+    <Content Include="CareerPlanningGabTest\PersonalProgress.Master" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Web.Debug.config">
